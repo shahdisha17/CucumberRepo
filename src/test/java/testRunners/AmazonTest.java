@@ -9,9 +9,10 @@ import io.cucumber.junit.CucumberOptions;
 	
 	@RunWith(Cucumber.class)
 	@CucumberOptions(
-			features = {"src/test/java/AppFeatures"},
+			features = {"src/test/resources/AppFeatures/Uber.feature"},
 			glue= {"stepDefinition"},
 			monochrome = true,
+			tags = "@Regression and @Smoke",
 			plugin = {"pretty"}
 			)
 	
