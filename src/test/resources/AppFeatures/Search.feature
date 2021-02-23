@@ -18,7 +18,14 @@
 #Sample Feature Definition Template
 
 Feature: Amazon Search
-	Scenario: Search a product
+	Scenario: Search a product MacBook air
 	Given Search filed on Amazon page
-	When I search for product name "Macbook Pro" and price 1000
-	Then Product will name "Macbook Pro" should be displayed
+	When I search for product name "Macbook Air" and price 800
+	Then Product will name "Macbook Air" should be displayed
+
+	
+	Scenario: Search a product iPhone
+	Given Search filed on Amazon page
+	When I search for product name "iPhone" and price 1100
+	Then Product will name "iPhone" should be displayed
+	

@@ -35,6 +35,9 @@ public class SearchSteps {
 		String name=search.displayProduct(product);
 		System.out.println("Search product name is : " +name);
 		
+		
+
+		
 	}
 
 }

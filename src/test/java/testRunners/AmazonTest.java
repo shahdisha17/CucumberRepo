@@ -9,11 +9,12 @@ import io.cucumber.junit.CucumberOptions;
 	
 	@RunWith(Cucumber.class)
 	@CucumberOptions(
-			features = {"src/test/resources/AppFeatures/Uber.feature"},
-			glue= {"stepDefinition"},
+			features = {"src/test/resources/AppFeatures/Search.feature"},
+			glue= {"stepDefinition","myHooks"},
 			monochrome = true,
-			tags = "@Regression and @Smoke",
-			plugin = {"pretty"}
+			tags = "@All",
+			plugin = {"pretty","json:target/MyReports/report.json",
+					"junit:target/MyReports/report.xml"}
 			)
 	
 	public class AmazonTest {
